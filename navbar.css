@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+}
+
+.topnav {
+  display: flex;
+  height: 45px;
+  border-bottom: 1px solid rgb(172, 170, 170);
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a.active {
+  background-color: #04aa6d;
+  color: white;
+  padding: 3px;
+}
+#search {
+  background-color: transparent;
+  border: 0px;
+  margin-left: 15px;
+  font-size: 18px;
+  line-height: 1px;
+}
+.logo {
+  margin: auto;
+  height: 30px;
+  cursor: pointer;
+}
+#news-pert {
+  margin: 13px 20px;
+  cursor: pointer;
+  font-family: "PT Serif", serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+}
+#log-in,
+#subsciption {
+  font-size: 12px;
+  height: 30px;
+  margin: 5px 20px;
+  background-color: teal;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid teal;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.mystyle {
+  display: none;
+}
+.NewsSearch {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+#go{
+  background-color: rgb(171,189,202);
+  margin-left: 3px;
+  border: 0px;
+  color: white;
+  padding: 3px;
+
+}
+/* Side nave Bar */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  font-family: "PT Serif", serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 14px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  background-color: rgb(186, 238, 233);
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 18px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+.dropdown-container {
+  display: none;
+  background-color: white;
+  padding-left: 8px;
+}
+
+.dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 14px;
+  color: black;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  font-family: "PT Serif", serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
