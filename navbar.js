@@ -4,8 +4,8 @@ function Navbar(){
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
           >&times;</a
         >
-        <button class="dropdown-btn">Home Page</button>
-        <button class="dropdown-btn">
+        <button class="dropdown-btn" onmouseover="outDropdown()">Home Page</button>
+        <button class="dropdown-btn" onmouseover="outDropdown()">
           World
           <i class="fa fa-caret-down"></i>
         </button>
@@ -15,7 +15,7 @@ function Navbar(){
           <a href="#">Australia</a>
           <a href="#">America</a>
         </div>
-        <button class="dropdown-btn">
+        <button class="dropdown-btn" onmouseover="outDropdown()">
           Business
           <i class="fa fa-caret-down"></i>
         </button>
@@ -25,7 +25,7 @@ function Navbar(){
           <a href="#">Link 2</a>
           <a href="#">Link 3</a>
         </div>
-        <button class="dropdown-btn">
+        <button class="dropdown-btn" onmouseover="outDropdown()">
           U.S. Politics
           <i class="fa fa-caret-down"></i>
         </button>
@@ -35,7 +35,7 @@ function Navbar(){
           <a href="#">Link 2</a>
           <a href="#">Link 3</a>
         </div>
-        <button class="dropdown-btn">
+        <button class="dropdown-btn" onmouseover="outDropdown()">
           U.S. News
           <i class="fa fa-caret-down"></i>
         </button>
@@ -45,7 +45,7 @@ function Navbar(){
           <a href="#">Link 2</a>
           <a href="#">Link 3</a>
         </div>
-        <button class="dropdown-btn">
+        <button class="dropdown-btn" onmouseover="outDropdown()">
           Sports
           <i class="fa fa-caret-down"></i>
         </button>
@@ -55,7 +55,7 @@ function Navbar(){
           <a href="#">Link 2</a>
           <a href="#">Link 3</a>
         </div>
-        <button class="dropdown-btn">
+        <button class="dropdown-btn" onmouseover="outDropdown()">
           Health
           <i class="fa fa-caret-down"></i>
         </button>
@@ -65,7 +65,7 @@ function Navbar(){
           <a href="#">Link 2</a>
           <a href="#">Link 3</a>
         </div>
-        <button class="dropdown-btn">
+        <button class="dropdown-btn" onmouseover="outDropdown()">
           N.Y.
           <i class="fa fa-caret-down"></i>
         </button>
@@ -75,7 +75,7 @@ function Navbar(){
           <a href="#">Link 2</a>
           <a href="#">Link 3</a>
         </div>
-        <button class="dropdown-btn">
+        <button class="dropdown-btn" onmouseover="outDropdown()">
           Opinion
           <i class="fa fa-caret-down"></i>
         </button>
@@ -85,7 +85,7 @@ function Navbar(){
           <a href="#">Link 2</a>
           <a href="#">Link 3</a>
         </div>
-        <button class="dropdown-btn">
+        <button class="dropdown-btn" onmouseover="outDropdown()">
           Tech
           <i class="fa fa-caret-down"></i>
         </button>
@@ -95,7 +95,7 @@ function Navbar(){
           <a href="#">Link 2</a>
           <a href="#">Link 3</a>
         </div>
-        <button class="dropdown-btn">
+        <button class="dropdown-btn" onmouseover="outDropdown()">
           Science
           <i class="fa fa-caret-down"></i>
         </button>
@@ -113,7 +113,7 @@ function Navbar(){
           >&#9776;
         </span>
 
-        <button id="search">
+        <button id="search" onclick="SearchHandle()">
           <i class="fas fa-search"></i>
         </button>
         <div id="input"></div>
@@ -125,8 +125,13 @@ function Navbar(){
         />
         <button id="subsciption">Sbscription Weak</button>
         <button id="log-in">Log In</button>
+        <button id="prof"><i class="fas fa-user-edit"></i></button>
       </div>
+      
+     
     `
 }
 
 export default Navbar
+
+// thuis is nav bar

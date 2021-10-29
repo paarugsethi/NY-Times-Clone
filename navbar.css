@@ -59,6 +59,8 @@ body {
 .NewsSearch {
   margin-top: 10px;
   margin-left: 20px;
+ max-width: 60%;
+  
 }
 #go{
   background-color: rgb(171,189,202);
@@ -136,4 +138,22 @@ body {
   font-family: "PT Serif", serif;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
+}
+#prof{
+  display: none;
+  border: none;
+  background-color: transparent;
+  
+}
+@media only screen and (max-width: 1000px) {
+  #prof{
+    display: block;
+  }
+  #log-in  {
+    display: none;
+}
+#subsciption{
+  display: none;
+}
+
 }
