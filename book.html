@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World News - The New York Times International</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="worldnews.css" type="text/css" />
+    <link href="navbar.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="navbar-Div"></div>
+    <div id="worldNews-f-div">
+      <div class="heading">
+        <h1>World News</h1>
+        <div class="table-div">
+          <table class="table">
+            <tr>
+              <td>CLIMATE</td>
+              <td>SPACE & ASTRONOMY</td>
+              <td>HEALTH</td>
+              <td>TRILOBITES</td>
+              <td>MATTER</td>
+              <td>OUT THERE</td>
+              <td>CORONAVIRES</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <!-- heading News -->
+
+      <div id="news-hedline"></div>
+
+      <div id="title_poster"></div>
+      <div id="time-spenish"></div>
+      <div id="dispatches"></div>
+      <div id="saturday"></div>
+      <div id="latest">
+        <div>
+          <button id="latest-news">Latest</button>
+          <button id="Nsearch"  onclick="Searchlatest()">
+            <i class="fas fa-search"></i> Search
+          </button>
+          <div id="inputSearch" >
+            <button id="icon"><i class="fas fa-search"></i></button>
+            <input id="inputSerachR" placeholder="Search" />
+          </div>
+        </div>
+       
+        
+      </div>
+      <div id="option" class="hide" style="display: flex">
+        <p id="paragraph"><span id="resultlength"></span>results sorted by </p>
+        <p id="newpara" style="font-weight: bold;"></p>
+          
+          <button class="oldest" onclick="block()">oldest</button>
+        
+      </div>
+      <div id="ltestNewsView"></div>
+      <div id="oldest" class="OldnewsDisplay none"></div>
+      <div id="serch_div"></div>
+    </div>
+
+    <script type="module" src="importNavbar.js"></script>
+    <script type="text/javascript" src="navbarfunction.js"></script>
+    <script type="text/javascript" src="book.js"></script>
+  </body>
+</html>

@@ -1,7 +1,7 @@
 const loadHome = async () => {
     try {
 
-        const res = await fetch(`https://api.nytimes.com/svc/topstories/v2/science.json?api-key=BJfrjqbfWdZvD9ALPlGGqTwjoKISrWmD`)
+        const res = await fetch(`https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=GDAa8Q5zaHgOlIfQW4PYAUgGV5yfQZs6`)
         const data = await res.json();
         console.log(data);
         prin_div(data);
@@ -210,10 +210,10 @@ function prin_div(data) {
         </div>
 
       <div class="timespenish_inner">
-      <a href="${data.results[23].url}"><img id="img-size" src="${data.results[23].multimedia[0].url}"/></a>
+      <a href="${data.results[13].url}"><img id="img-size" src="${data.results[13].multimedia[0].url}"/></a>
       <div>
-      <a href="${data.results[23].url}"> <h4>${data.results[23].title}</h4></a>
-      <p>${data.results[23].abstract}</p>
+      <a href="${data.results[13].url}"> <h4>${data.results[13].title}</h4></a>
+      <p>${data.results[13].abstract}</p>
      </div>
         </div>
 
@@ -254,7 +254,7 @@ resultlenth.textContent=`3652${data.results.length}`;
 const loadHome2 = async () => {
   try {
 
-      const res = await fetch(`https://api.nytimes.com/svc/topstories/v2/science.json?api-key=BJfrjqbfWdZvD9ALPlGGqTwjoKISrWmD`)
+      const res = await fetch(`https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=GDAa8Q5zaHgOlIfQW4PYAUgGV5yfQZs6`)
       const data = await res.json();
       console.log(data);
       showData(data);
