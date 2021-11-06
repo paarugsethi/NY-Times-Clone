@@ -6,7 +6,7 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 
-var dropdown = document.getElementsByClassName("dropdown-btn");
+const dropdown = document.getElementsByClassName("dropdown-btn");
 var i;
 
 for (i = 0; i < dropdown.length; i++) {
@@ -39,5 +39,24 @@ function SearchHandle() {
   div.append(input, go);
 }
 
+function outDropdown(){
+  for (i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener("mouseover", function () {
+      this.classList.toggle("active");
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+      } else {
+        dropdownContent.style.display = "block";
+      }
+    });
+  }
+}
 
-
+function locatonRe() {
+  location.replace("home.html");
+}
+function LoGIn(){
+  location.replace("login.html");
+  document.getElementById("log-in").style.display="none";
+}

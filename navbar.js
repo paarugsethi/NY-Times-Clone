@@ -4,7 +4,9 @@ function Navbar(){
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
           >&times;</a
         >
-        <button class="dropdown-btn" onmouseover="outDropdown()">Home Page</button>
+        <button class="dropdown-btn" onmouseover="outDropdown()">
+          Home Page
+        </button>
         <button class="dropdown-btn" onmouseover="outDropdown()">
           World
           <i class="fa fa-caret-down"></i>
@@ -14,6 +16,8 @@ function Navbar(){
           <a href="#">Africa</a>
           <a href="#">Australia</a>
           <a href="#">America</a>
+          <a href="#">Asia Pacific</a>
+          <a href="#">Canada</a>
         </div>
         <button class="dropdown-btn" onmouseover="outDropdown()">
           Business
@@ -21,9 +25,10 @@ function Navbar(){
         </button>
 
         <div class="dropdown-container">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
+          <a href="#">Dell book</a>
+          <a href="#">Economy</a>
+          <a href="#">Energy</a>
+          <a href="#">Market</a>
         </div>
         <button class="dropdown-btn" onmouseover="outDropdown()">
           U.S. Politics
@@ -31,9 +36,9 @@ function Navbar(){
         </button>
 
         <div class="dropdown-container">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
+          <a href="#">President Biden</a>
+          <a href="#">Supreme Court</a>
+          <a href="#">Congress</a>
         </div>
         <button class="dropdown-btn" onmouseover="outDropdown()">
           U.S. News
@@ -41,9 +46,10 @@ function Navbar(){
         </button>
 
         <div class="dropdown-container">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
+          <a href="#">Education</a>
+          <a href="#">California</a>
+          <a href="#">race/ related</a>
+          <a href="#">Wildfire Tracker</a>
         </div>
         <button class="dropdown-btn" onmouseover="outDropdown()">
           Sports
@@ -51,9 +57,14 @@ function Navbar(){
         </button>
 
         <div class="dropdown-container">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
+          <a href="#">Olympic</a>
+          <a href="#">MLB</a>
+          <a href="#">NBA</a>
+          <a href="#">NFL</a>
+          <a href="#">NHL</a>
+          <a href="#">NCAA Baskeetball</a>
+          <a href="#">NCAA football</a>
+          <a href="#">Golf</a>
         </div>
         <button class="dropdown-btn" onmouseover="outDropdown()">
           Health
@@ -61,29 +72,27 @@ function Navbar(){
         </button>
 
         <div class="dropdown-container">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
+          <a href="#">Money & Policy</a>
+          <a href="#">Health Guide</a>
+          
         </div>
         <button class="dropdown-btn" onmouseover="outDropdown()">
           N.Y.
-          <i class="fa fa-caret-down"></i>
+          
         </button>
 
-        <div class="dropdown-container">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
+       
         <button class="dropdown-btn" onmouseover="outDropdown()">
           Opinion
           <i class="fa fa-caret-down"></i>
         </button>
 
         <div class="dropdown-container">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
+          <a href="#">Columnists</a>
+          <a href="#">Editorials</a>
+          <a href="#">Guist Essaay</a>
+          <a href="#">Letters</a>
+          <a href="#">Sunday Review</a>
         </div>
         <button class="dropdown-btn" onmouseover="outDropdown()">
           Tech
@@ -91,9 +100,9 @@ function Navbar(){
         </button>
 
         <div class="dropdown-container">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
+          <a href="#">Personal Tch</a>
+          <a href="#">Cyber Security</a>
+          <a href="#">Social Media</a>
         </div>
         <button class="dropdown-btn" onmouseover="outDropdown()">
           Science
@@ -117,16 +126,17 @@ function Navbar(){
           <i class="fas fa-search"></i>
         </button>
         <div id="input"></div>
-        <h4 id="news-pert">WORLD NEWS</h4>
-        <img
+        <h4 id="news-pert">BUSINESS</h4>
+        <img onclick="locatonRe()"
           src="https://myaccount.nytimes.com/lire_ui/img/nyt-logo.svg"
           alt="News-logo"
           class="logo"
         />
         <button id="subsciption">Sbscription Weak</button>
-        <button id="log-in">Log In</button>
+        <button id="log-in" onclick="LoGIn()">Log In</button>
         <button id="prof"><i class="fas fa-user-edit"></i></button>
       </div>
+    </div>
       
      
     `
