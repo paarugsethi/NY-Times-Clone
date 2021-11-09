@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #container {
+  display: flex;
+  overflow-x: scroll;
+  
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+#container p {
+  font-family: sans-serif;
+  
+  border-radius: 8px;
+  background: #ff6961;
+  color: white;
+  
+  padding: 2rem 3rem;
+  margin: 2rem 1rem;
+}
+  #container{
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  }
+    </style>
+    <link
+      rel="shortcut icon"
+      href="https://scontent.fbbi1-1.fna.fbcdn.net/v/t1.6435-9/p960x960/249698033_3212967222323343_1963010322458135930_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=730e14&_nc_ohc=ZULsGLoqNcUAX_zWfd2&_nc_ht=scontent.fbbi1-1.fna&oh=700e5e800f686f3dee5f672f10d1dbff&oe=61A30AE4"
+    />
+  </head>
+  <body>
+    <div id="container">
+  <p>1</p>
+  <p>2</p>
+  <p>3</p>
+  <p>4</p>
+  <p>5</p>
+  <p>6</p>
+  <p>7</p>
+  <p>8</p>
+  <p>9</p>
+  <p id="fet">10</p>
+</div>
+
+   <a href="#fet" class="smooth"><button>></button></a>
+    <script type="text/javascript">
+     const element = document.querySelector("#container");
+
+element.addEventListener('wheel', (event) => {
+  event.preventDefault();
+
+  element.scrollBy({
+    left: event.deltaY < 0 ? -30 : 30,
+    
+  });
+});
+    </script>
+  </body>
+</html>

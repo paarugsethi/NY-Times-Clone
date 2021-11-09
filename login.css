@@ -1,0 +1,110 @@
+.nav{
+    border-bottom: 0;
+    padding-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 30px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.nav > img {
+    padding-top: 20px;
+}
+#allLogin{
+    width: 33.33%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 20px;
+}
+h2{
+    text-align: center;
+    padding: 10px 0;
+}
+input{
+    width: 99%;
+    border-radius: 3px;
+    border: 1px solid gray;
+    height: 38px;
+    margin-bottom: 10px;
+}
+button{
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid gray;
+    height: 38px;
+    cursor: pointer;
+    margin: 3px 0;
+    background: transparent;
+}
+button:hover{
+    background: rgba(243, 240, 240, 0.945);
+}
+#line{
+    display: flex;
+}
+#line > div{
+    border-bottom: 1px solid rgb(207, 206, 206);
+    width: 50%;
+    padding-bottom: 10px
+}
+#Continue{
+    background: black;
+    color: white;
+    
+}
+.para{
+    text-align: center;
+    font-size:12px;
+}
+a{
+    color: black;
+}
+.fab{
+    font-size: 20px;
+    margin-right: 10px;
+}
+.fa-google{
+    background: #FF0000;
+    background: -webkit-radial-gradient(circle farthest-side at top right, #FF0000 0%, #FFFF00 28%, #05C1FF 33%, #FFFF00 75%, #FF0000 100%);
+    background: -moz-radial-gradient(circle farthest-side at top right, #FF0000 0%, #FFFF00 28%, #05C1FF 33%, #FFFF00 75%, #FF0000 100%);
+    background: radial-gradient(circle farthest-side at top right, #FF0000 0%, #FFFF00 28%, #05C1FF 33%, #FFFF00 75%, #FF0000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+
+}
+.fa-facebook-square{
+    color: #1b1386
+}
+#footer{
+    display: flex;
+    width: 40%;
+    margin: auto;
+    
+}
+#footer > p {
+    font-size: 12px;
+    color: rgb(145, 144, 144);
+    margin-right: 10px;
+}
+#footer > p >a {
+    font-size: 12px;
+    color: rgb(145, 144, 144);
+    margin-right: 10px;
+}
+.lineHight{
+    font-size: 12px;
+    line-height: 0;
+    display: none;
+    color: red;
+}
+.none{
+    display: none;
+}
+.block{
+    display: block;
+}
+.borderReed{
+    border: 1px solid red;
+}
+#Hidepara{
+    color: #FF0000;
+    font-size: 10px;
+
+}

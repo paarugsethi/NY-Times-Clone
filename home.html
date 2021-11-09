@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      The New York Times International - Breaking News, US News, World News,
+      Videos
+    </title>
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="shortcut icon" href="https://scontent.fbbi1-1.fna.fbcdn.net/v/t1.6435-9/p960x960/249698033_3212967222323343_1963010322458135930_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=730e14&_nc_ohc=ZULsGLoqNcUAX_zWfd2&_nc_ht=scontent.fbbi1-1.fna&oh=700e5e800f686f3dee5f672f10d1dbff&oe=61A30AE4"/>
+    <link rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <link href="navbar_forHome.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="home.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="navbar-Div">
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <button class="dropdown-btn" onmouseover="outDropdown()">
+          Home Page
+        </button>
+        <button class="dropdown-btn" onmouseover="outDropdown()">
+          World
+          <i class="fa fa-caret-down"></i>
+        </button>
+
+        <div class="dropdown-container">
+          <a href="#">Africa</a>
+          <a href="#">Australia</a>
+          <a href="#">America</a>
+          <a href="#">Asia Pacific</a>
+          <a href="#">Canada</a>
+        </div>
+        <button class="dropdown-btn" onmouseover="outDropdown()">
+          Business
+          <i class="fa fa-caret-down"></i>
+        </button>
+
+        <div class="dropdown-container">
+          <a href="#">Dell book</a>
+          <a href="#">Economy</a>
+          <a href="#">Energy</a>
+          <a href="#">Market</a>
+        </div>
+        <button class="dropdown-btn" onmouseover="outDropdown()">
+          U.S. Politics
+          <i class="fa fa-caret-down"></i>
+        </button>
+
+        <div class="dropdown-container">
+          <a href="#">President Biden</a>
+          <a href="#">Supreme Court</a>
+          <a href="#">Congress</a>
+        </div>
+        <button class="dropdown-btn" onmouseover="outDropdown()">
+          U.S. News
+          <i class="fa fa-caret-down"></i>
+        </button>
+
+        <div class="dropdown-container">
+          <a href="#">Education</a>
+          <a href="#">California</a>
+          <a href="#">race/ related</a>
+          <a href="#">Wildfire Tracker</a>
+        </div>
+        <button class="dropdown-btn" onmouseover="outDropdown()">
+          Sports
+          <i class="fa fa-caret-down"></i>
+        </button>
+
+        <div class="dropdown-container">
+          <a href="#">Olympic</a>
+          <a href="#">MLB</a>
+          <a href="#">NBA</a>
+          <a href="#">NFL</a>
+          <a href="#">NHL</a>
+          <a href="#">NCAA Baskeetball</a>
+          <a href="#">NCAA football</a>
+          <a href="#">Golf</a>
+        </div>
+        <button class="dropdown-btn" onmouseover="outDropdown()">
+          Health
+          <i class="fa fa-caret-down"></i>
+        </button>
+
+        <div class="dropdown-container">
+          <a href="#">Money & Policy</a>
+          <a href="#">Health Guide</a>
+        </div>
+        <button class="dropdown-btn" onmouseover="outDropdown()">N.Y.</button>
+
+        <button class="dropdown-btn" onmouseover="outDropdown()">
+          Opinion
+          <i class="fa fa-caret-down"></i>
+        </button>
+
+        <div class="dropdown-container">
+          <a href="#">Columnists</a>
+          <a href="#">Editorials</a>
+          <a href="#">Guist Essaay</a>
+          <a href="#">Letters</a>
+          <a href="#">Sunday Review</a>
+        </div>
+        <button class="dropdown-btn" onmouseover="outDropdown()">
+          Tech
+          <i class="fa fa-caret-down"></i>
+        </button>
+
+        <div class="dropdown-container">
+          <a href="#">Personal Tch</a>
+          <a href="#">Cyber Security</a>
+          <a href="#">Social Media</a>
+        </div>
+        <button class="dropdown-btn" onmouseover="outDropdown()">
+          Science
+          <i class="fa fa-caret-down"></i>
+        </button>
+
+        <div class="dropdown-container">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <div class="topnav">
+        <span
+          style="font-size: 30px; cursor: pointer; margin-left: 10px"
+          onclick="openNav()"
+          >&#9776;
+        </span>
+
+        <button id="search" onclick="SearchHandle()">
+          <i class="fas fa-search"></i>
+        </button>
+        <div id="input"></div>
+
+        <table id="navbar-table">
+          <tr>
+            <td font-size="10px">
+              <a class="nav-table" lang="en-US" href="/"
+                ><span class="nav-table">U.S.</span></a
+              >
+            </td>
+            <td>
+              <a
+                class="nav-table"
+                lang="en"
+                href="/international/?action=click&amp;region=Editions&amp;pgtype=Homepage"
+                ><strong>INTERNATIONAL</strong></a
+              >
+            </td>
+            <td>
+              <a
+                class="nav-table"
+                lang="en-CA"
+                href="/ca/?action=click&amp;region=Editions&amp;pgtype=Homepage"
+                ><span class="nav-table">CANADA</span></a
+              >
+            </td>
+            <td>
+              <a
+                class="nav-table"
+                href="https://www.nytimes.com/es/"
+                lang="es-ES"
+              >
+                <span class="nav-table">Español</span></a
+              >
+            </td>
+            <td>
+              <a class="nav-table" href="https://cn.nytimes.com" lang="zh-hans"
+                ><span class="nav-table">中文</span></a
+              >
+            </td>
+          </tr>
+        </table>
+        <img
+          class="hide"
+          id="logo-img"
+          src="https://myaccount.nytimes.com/lire_ui/img/nyt-logo.svg"
+          alt="News-logo"
+          class="logo"
+        />
+        <button id="subsciption">Sbscription Weak</button>
+        <button id="log-in" onclick="LoGIn()">Log In</button>
+        <button id="prof"><i class="fas fa-user-edit"></i></button>
+      </div>
+      <div id="inner_navbar">
+        <div id="latest_Date">
+          <p id="demo"></p>
+          <p class="today">Today’s Paper</p>
+        </div>
+        <div class="weather_img">
+          <a href="http://"
+            ><img
+              id="inner-logo-img"
+              src="https://myaccount.nytimes.com/lire_ui/img/nyt-logo.svg"
+              alt="News-logo"
+          /></a>
+        </div>
+        <div id="weatherData">
+          <p id="weather"></p>
+          <p id="data"></p>
+        </div>
+      </div>
+
+      <div id="allnews_dataline">
+        <a href="World.html"><div>World</div></a>
+        <a href="usNews.html"><div>U.S</div></a>
+        <a href="https://www.nytimes.com/international/section/politics"
+          ><div>Politics</div></a
+        >
+        <a href="https://www.nytimes.com/international/section/nyregion"
+          ><div>N.Y</div></a
+        >
+        <a href="business.html"><div>Business</div></a>
+        <a href="https://www.nytimes.com/international/section/opinion/"
+          ><div>Opinion</div></a
+        >
+        <a href="https://www.nytimes.com/international/section/technology"
+          ><div>Tech</div></a
+        >
+        <a href="science.html"
+          ><div>Science</div></a
+        >
+        <a href="https://www.nytimes.com/international/section/health"
+          ><div>Health</div></a
+        >
+        <a href="https://www.nytimes.com/international/section/sports"
+          ><div>Sports</div></a
+        >
+        <a href="arts.html"
+          ><div>Arts</div></a
+        >
+        <a href="books.html"
+          ><div>Books</div></a
+        >
+        <a href="https://www.nytimes.com/international/section/style"
+          ><div>Style</div></a
+        >
+        <a href="https://www.nytimes.com/international/section/food"
+          ><div>Food</div></a
+        >
+        <a href="https://www.nytimes.com/international/section/travel"
+          ><div>Travel</div></a
+        >
+        <a href="https://www.nytimes.com/international/section/magazine"
+          ><div>Magazine</div></a
+        >
+        <a href="https://www.nytimes.com/international/section/t-magazine"
+          ><div>TMagazine</div></a
+        >
+        <a href="https://www.nytimes.com/video"><div>Video</div></a>
+      </div>
+
+      <div class="underline"></div>
+    </div>
+    <div id="headLine">
+      <div id="sup_alldetails">
+        <div id="all_Details">
+          <div id="video_running"></div>
+          <div id="back_groundImg"></div>
+          <div id="runningVdo">
+            <video autoplay muted loop id="myVideoo">
+              <source
+                src="https://vp.nyt.com/video/2021/10/31/96915_1_VI-SUB-TRAFFIC-VID_wg_720p.mp4"
+                type="video/mp4"
+              />
+            </video>
+            <h3>
+              ramifications of the $1.85 trillion plan. Tom Brenner for The New
+              York Times Cinemagraph Rewinding Video of Shootings Often Reveals
+              Police Errors
+            </h3>
+            <p>
+              How does a turn-signal violation become a fatal shooting? We
+              examined over 100 cases to see the impact of “officer-created
+              jeopardy.”
+            </p>
+          </div>
+          <div id="a_3hedlineNws"></div>
+        </div>
+        <div id="sidebarHeadline">
+          <div class="pic_WithHeading">
+            <h2>Kenneth Branagh Is Finally Processing His Childhood Trauma</h2>
+            <p>
+              Branagh made his cinematic name with vibrant interpretations of
+              Shakespeare, but a smaller, more personal project may yield his
+              biggest career coup.
+            </p>
+            <div class="pic_WithHeading_side">
+              <img
+                src="https://static01.nyt.com/images/2021/11/07/magazine/07mag-talk/07mag-talk-threeByTwoSmallAt2X.jpg?format=pjpg&quality=75&auto=webp&disable=upscale"
+              />
+              <p><small>Mamadi Doumbouya for The New York Times</small></p>
+            </div>
+          </div>
+          <div id="Twoheading">
+            <div class="onlyHeading">
+              <h3>
+                Some women have been surprised to be the ones doling out spousal
+                support to men.
+              </h3>
+            </div>
+            <div>
+              <h3>
+                In his new book, Kal Penn talks about his fiance, Josh, and
+                explains his break from Hollywood to work for the White House.
+              </h3>
+            </div>
+          </div>
+          <div class="gun_img2hed">
+            <div>
+              <h5><b>Opinion</b></h5>
+              <h4 class="mute">KATHRYN KOLBERT AND JULIE F. KAY</h4>
+              <h3>Roe Is as Good as Gone. It’s Time for a New Strategy.</h3>
+            </div>
+            <div class="GunImg">
+              <div>
+                <h4 class="mute">ADAM WINKLER</h4>
+                <h3>The Gun Safety Movement Is on the Precipice of Disaster</h3>
+              </div>
+              <div>
+                <img
+                  src="https://static01.nyt.com/images/2021/11/01/us/00language-video-promo-portrait-new/merlin_191127006_a8d7482e-e43e-417a-a033-c62c0dc648ef-threeByTwoMediumAt2X.jpg?format=pjpg&quality=75&auto=webp&disable=upscale"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div id="profile">
+            <div class="only_Heading">
+              <div class="mte_line">
+                <h4 class="mute">PAUL KRUGMAN</h4>
+                <h3>No, Vaccine Mandates Aren’t an Attack on Freedom</h3>
+              </div>
+              <div class="guardline">
+                <h4 class="mute">JAY CASPIAN KANG</h4>
+                <h3>
+                  A Quietly Big Idea on How We Think About Homeless People
+                </h3>
+              </div>
+            </div>
+            <div class="heading_withImg">
+              <div class="right">
+                <h4 class="mute">MICHELLE GOLDBERG</h4>
+                <h3>We Should All Know Less About Each Other</h3>
+              </div>
+              <div class="lady_img">
+                <div class="padding_right">
+                  <h4 class="mute">MARGARET RENKL</h4>
+                  <h3>I Just Turned 60, but I Still Feel 22</h3>
+                </div>
+                <div>
+                  <img
+                    src="https://static01.nyt.com/images/2021/11/01/opinion/01renkl-image/01renkl-image-superJumbo.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="guardline">
+              <h4 class="mute">XIMENA CASAS</h4>
+              <h3>
+                How the ‘Green Wave’ Movement Did the Unthinkable in Latin
+                America
+              </h3>
+            </div>
+          </div>
+
+          <div></div>
+        </div>
+      </div>
+
+      <div id="Scrol-container">
+        <div id="overFlow-x"></div>
+      </div>
+
+      <div id="ScroolWith_img">
+        <h3>More News</h3>
+      </div>
+      <div id="topBorderer">
+        <h3>Health and Family</h3>
+        <div id="Scrol-containeR">
+          <div id="overFlow-X"></div>
+        </div>
+
+        <div id="Culture">
+          <h3>Culture and Lifestyle</h3>
+          <div class="lifestyle">
+            <div class="large_img_lifestyle">
+              <img
+                src="https://static01.nyt.com/images/2021/11/01/business/00wheels-iran-print/00wheels-paykan1-threeByTwoMediumAt2X.jpg?format=pjpg&quality=75&auto=webp&disable=upscale"
+              />
+              <p>Courtesy of John Parra/Getty Images for PaykanArtCar</p>
+              <div>
+                <h3>
+                  To Protest Iran’s Anti-Gay Abuses, an Artist Painted a
+                  Dictator’s Car
+                </h3>
+                <p>
+                  A car painted by Alireza Shojaian to protest Iran’s repression
+                  of lesbian, gay, bisexual, transgender and queer people sold
+                  for €95,000 in an auction.
+                </p>
+              </div>
+            </div>
+
+            <div id="clture_Scrool">
+              <div class="cultureImgScrool">
+                <div class="cultureRightLine">
+                  <img
+                    src="https://static01.nyt.com/images/2021/11/01/multimedia/01sp-transportation-supersonic/01sp-transportation-supersonic-threeByTwoSmallAt2X.jpg?format=pjpg&quality=75&auto=webp&disable=upscale"
+                  />
+                  <p>Matt Williams</p>
+                  <div>
+                    <h3>Can Supersonic Air Travel Fly Again?</h3>
+                    <p class="paragraphNon">
+                      The key to its revival may be a breakthrough in creating a
+                      quieter sonic boom. The challenges, though, are
+                      significant.
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <img
+                    src="https://static01.nyt.com/images/2021/11/01/arts/01jaws-play5/01jaws-play5-threeByTwoSmallAt2X.jpg?format=pjpg&quality=75&auto=webp&disable=upscale"
+                  />
+                  <p>Helen Maybanks</p>
+                  <div>
+                    <h3>The ‘Jaws’ Shoot Was a Drama. Now It’s a Play.</h3>
+                    <p class="paragraphNon">
+                      The hit movie’s set was plagued by malfunctioning sharks
+                      and drunken feuds — perfect material for a night at the
+                      theater.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cultureImgScrool downLine">
+                <div class="cultureRightLine">
+                  <img
+                    src="https://static01.nyt.com/images/2021/10/01/fashion/00ML-OCTOBER-TLS-6/00ML-OCTOBER-TLS-6-threeByTwoSmallAt2X.jpg?format=pjpg&quality=75&auto=webp&disable=upscale"
+                  />
+                  <p>Brian Rea</p>
+                  <div>
+                    <h3>
+                      Tiny Love Stories: ‘With You, I Can Be a New Person’
+                    </h3>
+                    <p class="paragraphNon">
+                      Modern Love in miniature, featuring reader-submitted
+                      stories of no more than 100 words.
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <img
+                    src="https://static01.nyt.com/images/2021/11/02/sports/02nfl-rams-miller/02nfl-rams-miller-threeByTwoSmallAt2X.jpg?format=pjpg&quality=75&auto=webp&disable=upscale"
+                  />
+                  <p>Jack Dempsey/Associated Press</p>
+                  <div>
+                    <h3>Trading for Von Miller, the Rams Are All In</h3>
+                    <p class="paragraphNon">
+                      The key to its revival may be a breakthrough in creating a
+                      quieter sonic boom. The challenges, though, are
+                      significant.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="food">
+        <h3>New York Times Cooking</h3>
+        <div id="Scrol-containeR">
+          <div id="overFlow-X">
+            <div class="Xderection-i">
+              <div class="AAuthorImg">
+                <img
+                  src="https://static01.nyt.com/images/2021/11/03/dining/01rodenrex2-cake-copy/01rodenrex2-cake-threeByTwoSmallAt2X.jpg?format=pjpg&quality=75&auto=webp&disable=upscale"
+                />
+                <p>Kate Sears for The New York Times</p>
+                <h3>Yogurt Cake</h3>
+              </div>
+            </div>
+            <div class="Xderection-i">
+              <div class="AAuthorImg">
+                <img
+                  src="https://static01.nyt.com/images/2020/10/28/dining/garlic-kale-salad-copy/merlin_105432130_4e30fd58-8264-4bdf-95f9-d05db12d0570-threeByTwoSmallAt2X.jpg?format=pjpg&quality=75&auto=webp&disable=upscale"
+                />
+                <p>Craig Lee for The New York Times</p>
+                <h3>Lemon-Garlic Kale Salad</h3>
+              </div>
+            </div>
+            <div class="Xderection-i">
+              <div class="AAuthorImg">
+                <img
+                  src="https://static01.nyt.com/images/2021/01/06/dining/04cookbooksrex-white-beans-copy/merlin_181830831_89593d64-43f8-487a-bac1-6c064744c014-threeByTwoSmallAt2X.jpg?format=pjpg&quality=75&auto=webp&disable=upscale"
+                />
+                <p>Julia Gartland for The New York Times</p>
+                <h3>Tsaramaso Malagasy (White Bean Tomato Stew)</h3>
+              </div>
+            </div>
+            <div class="Xderection-i">
+              <div class="AAuthorImg">
+                <img
+                  src="https://static01.nyt.com/images/2018/12/28/dining/as-twice-baked-potatoes-copy/as-twice-baked-potatoes-threeByTwoSmallAt2X.jpg?format=pjpg&quality=75&auto=webp&disable=upscale"
+                />
+                <p>David Malosh for The New York Times</p>
+                <h3>Twice-Baked Potatoes</h3>
+              </div>
+            </div>
+            <div class="Xderection-i" id="first">
+              <div class="AAuthorImg">
+                <img
+                  src="https://static01.nyt.com/images/2020/11/25/dining/chocolatepecanpie-copy/chocolatepecanpie-square640.jpg?format=pjpg&quality=75&auto=webp&disable=upscale"
+                />
+                <p>Andrew Scrivani for The New York Times</p>
+                <h3>Chocolate Pecan Pie</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="recomendation">
+        <h3>Recommendations From Wirecutter</h3>
+        <div class="recomendation_Sub">
+          <div class="recomendation_heading">
+            <h2>Wirecutter’s 100 Most Popular Picks in October</h2>
+            <p>
+              Here are the things Wirecutter readers loved the most last month.
+            </p>
+          </div>
+          <div class="re_img_title">
+            <div class="REtitle">
+              <h3>Gifts for Runners</h3>
+              <p>
+                These presents are thoughtful, practical, artful and even
+                pleasantly painful.
+              </p>
+            </div>
+            <div class="REimg">
+              <img
+                src="https://static01.nyt.com/images/2021/11/01/smarter-living/wc-gifts-runners-pic/wc-gifts-runners-pic-threeByTwoSmallAt2X.jpg?format=pjpg&quality=75&auto=webp&disable=upscale"
+              />
+              <p>Michael Hession</p>
+            </div>
+          </div>
+          <div class="REcom">
+            <div class="REcom_underline">
+              <h3>The Global Supply Chain Might Ruin Christmas</h3>
+              <p>
+                But don’t worry too much. We have advice to help you get what
+                you want in plenty of time — without paying a fortune.
+              </p>
+            </div>
+            <div>
+              <h3>Learn More About Wirecutter</h3>
+              <p>
+                The Times’s product recommendation service tests thousands of
+                items each year to help you find the best of everything.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="play">
+        <h4>Play</h4>
+        <a href="#fi"
+          ><button id="prev"><i class="fas fa-angle-left"></i></button
+        ></a>
+        <a href="#last"
+          ><button id="next"><i class="fas fa-angle-right"></i></button
+        ></a>
+
+        <div class="play_fullDiv">
+          <div id="fi">
+            <div>
+              <h4>Spelling Bee</h4>
+              <p>How many words can you make with 7 letters?</p>
+            </div>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYHQzhWapeiWRdR6XIba9_KZ-uYYuIUViy7w&usqp=CAU"
+            />
+          </div>
+          <div>
+            <div>
+              <h4>The Crossword</h4>
+              <p>Get clued in with wordplay, every day.</p>
+            </div>
+            <img
+              src="data:image/png;base64,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"
+            />
+          </div>
+          <div>
+            <div>
+              <h4>Letter Boxed</h4>
+              <p>Create words using letters around the square.</p>
+            </div>
+            <img
+              src="data:image/png;base64,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"
+            />
+          </div>
+          <div>
+            <div>
+              <h4>Tiles</h4>
+              <p>Match visual elements and keep your chain going.</p>
+            </div>
+            <img
+              src="data:image/jpeg;base64,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"
+            />
+          </div>
+          <div id="last">
+            <div>
+              <h4>Vertex</h4>
+              <p>Connect the dots to reveal the hidden picture.</p>
+            </div>
+            <img
+              src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRhaZ7jQcC1cOnUVcqfEeWmKzTZ3ygCftaM_EITVzNzgtN5WF85"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="DoubleLine"></div>
+      <div id="popular">
+        <h3>Neews</h3>
+        <div id="mostPopular"></div>
+      </div>
+      <div class="DoubleLine"></div>
+
+      <div id="opinion" class="opniondisplay">
+        <h3>OPENION</h3>
+        <div id="openionDiv"></div>
+      </div>
+      <div class="DoubleLine"></div>
+      <div id="Arts" class="opniondisplay">
+        <h3>Arts</h3>
+        <div id="ArtsDiv"></div>
+      </div>
+
+      <!-- 
+      <div id="Living" class="opniondisplay">
+        <h3>LIVING</h3>
+        <div id="LivingDiv"></div>
+      </div> -->
+      <div id="end-footer"></div>
+    </div>
+  </body>
+  <script type="module" src="footerFunction.js"></script>
+  <script type="text/javascript" src="home.js"></script>
+  <script type="text/javascript" src="home_navbar.js"></script>
+  <script type="text/javascript" src="login.js"></script>
+  <script type="text/javascript" src="navbarfunction.js"></script>
+</html>

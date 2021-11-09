@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter email - The New York Times</title>
+    <link
+      rel="shortcut icon"
+      href="https://scontent.fbbi1-1.fna.fbcdn.net/v/t1.6435-9/p960x960/249698033_3212967222323343_1963010322458135930_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=730e14&_nc_ohc=ZULsGLoqNcUAX_zWfd2&_nc_ht=scontent.fbbi1-1.fna&oh=700e5e800f686f3dee5f672f10d1dbff&oe=61A30AE4"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="navbar.css"/>
+    <link rel="stylesheet" href="login.css"/>
+</head>
+<body>
+    <div class="topnav nav">
+           
+        
+        <img onclick="locatonRe()"
+          src="https://myaccount.nytimes.com/lire_ui/img/nyt-logo.svg"
+          alt="News-logo"
+          class="logo"
+        />
+        
+      </div>
+    </div>
+    <div id="allLogin" >
+        <h2>Log in or create an account</h2>
+        <h2 class="none" id="LogIn">Log in to your account</h2>
+        <b>Email Address</b><br>
+        <input type="email" id="myemail"/>
+        <b class="none">Password</b><br>
+        <input class="none" type="password" id="mypassword" />
+        <p class="lineHight" id="Hidepara">* Please enter your username or email address.</p>
+        <button id="Continue" class="block">Continue</button>
+        <button id="Continue2" class="none">Log in</button>
+        <div id="line">
+            <div></div>Or<div></div>
+        </div>
+        <p class="para">By continuing, you agree to the <a href="https://help.nytimes.com/hc/en-us/articles/115014893428-Terms-of-service">Terms of Service</a> and acknowledge our</p>
+        <p class="para"><a href="https://www.nytimes.com/privacy/privacy-policy">Privacy Policy.</a></p>
+       <a href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?client_id=1005640118348-amh5tgkq641oru4fbhr3psm3gt2tcc94.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fmyaccount.nytimes.com%2Fauth%2Fgoogle-login-callback&response_type=code&scope=profile%20email&state=H4sIAAAAAAAAA32Qy2rDMBBF%2F0WQrkIsWbEsG0LpogGn3fQRyC7I0igRkS0jyTUhzb9X7rKLwizuHQ6HYW7IgzIeZNy%2FN6hG5xiHUGfZNE2r%2FhpNB2ElXZeFsQ3SmyEa12fdaKMZvFOjjJkd%2BMvb%2FmN1jp19lKIbhDn1jdqUu%2B3u8PB8aD6PSb35FS%2Fo0yLfpvmjTxvTR%2FC9mP3Cpo6WKLoL9Ommqmo5kxSI1gXDmFQcY2gV16RghKpqRq8DJNK6k%2BlT1dZNqe5fUx6NQjVeIhM7VBNGGaZrVlRLJHxMjHTuYiBxQppUv8wcVYpa2ADJ7C%2BoviERAsx4J0I8g1CJ8qDBe%2FDH0dt%2FPofuMyoU%2BCYdgtD9W2NBWKlbUlLWSqUZF6LgsJZYV7lqBcec4pyUOWBWlpXWSklFC04qvBZM6R87oflltAEAAA%3D%3D&access_type=offline&auth_type=rerequest&flowName=GeneralOAuthFlow">
+         <button id="google"><i class="fab fa-google"></i> Continue with Google</button></a><br>
+        <a href="https://www.facebook.com/v8.0/dialog/oauth?client_id=842128555832133&redirect_uri=https%3A%2F%2Fmyaccount.nytimes.com%2Fauth%2Ffacebook-login-callback&response_type=code&scope=public_profile%2Cemail&state=H4sIAAAAAAAAA32Qy2rDMBBF%2F0WQrkIsW45kG0LpogGn3fQRyC6MpFEi4heSXBPS%2FHvlLrsozOLe4XAY5kYcautQhf17TSpyDmHwVZJM07TqrsG26FeqbxM%2FSq%2BcHYLtu6Qdm2AH1%2BtRhaQZipe3%2FcfqHNrmUUE7gD11td6I3XZ3eHg%2B1J%2FHqN78ihfsaZFt4%2FzRx43tAroOZj80sZMlCf0Fu3hTyWiGDEAJxgDXkK%2BNpJkEY0plOMMZvQ4YyaY%2F2S5W0%2FRTrPvXmEerSUWXxIaWVClnnLJcZOslARcio%2Fr%2BYmcFKBvrl52jjtFA4zGa3YVUNwLe44y34MMZQUfKoUHn0B1H1%2FzzOXKfUdDo6ngIIfdvoErRFJFTJSSIUujSqJRjKXOppEBWQC4LTI0wnGda55mhJZc6jW%2FguuA%2FodyYDbQBAAA%3D&access_type=offline&display=popup&auth_type=rerequest">
+         <button id="facebook"><i class="fab fa-facebook-square"></i>Continue with Facebook</button></a><br>
+        <a href="https://appleid.apple.com/auth/authorize?client_id=com.nytimes.myaccount.www&redirect_uri=https%3A%2F%2Fmyaccount.nytimes.com%2Fauth%2Fapple-login-callback&response_type=code&scope=name%20email&state=H4sIAAAAAAAAA32Qy2rDMBBF%2F0WQrkL8jmRDKF004LSbPgLZhfFolIj4hSzXhDT%2F3nGXXRRmce9wOIx0E460dYR%2B%2F16KQpy974ciCKZpWrVXbxsaVtg1wTBWAzrbe9u1QTPW3vau0yP6oO7Vy9v%2BY3X2Tf2I0PRgT22pN3K33R0eng%2Fl55HVm1%2FxInlaxFueP3re2NaTa2H2Q81dLIXvLtTyTXmEaZWpXJtQVWTilIwiUJAgJmQAZ%2FTaE5N1d7ItV1N3E9f9K%2BfRalGES2F9I4ponazDJJV5vBTgPDPYdRdLzAFarl92jpqjgXogNruLKG4ChoFmvIHBnwk0U44MOUfuOLr6n58T9xkFTa7kQ4S4f%2Bd5TNE6jqTCRKIkfk8WZXkamwRAagQNaSUNZLJKUMsUw0xHKgoVpiqVtP4BrNRYKLQBAAA%3D&response_mode=form_post&auth_type=rerequest">
+         <button id="apple"><i class="fab fa-apple"></i>Continue with Apple</button></a>
+    </div>
+    <hr>
+    <div id="footer">
+        <p >© 2021 The New York Times Company</p>
+        <p><a href="#">Privacy Policy</a> <a href="#"> Help</a> <a href="#">ContactUs</a> <a href="#">California</a> <a href="#">Notices</a></p>
+    </div>
+
+   
+
+
+<script type="text/javascript" src="login.js"></script>
+</body>
+</html>

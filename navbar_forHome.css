@@ -5,7 +5,7 @@ body {
 .topnav {
   display: flex;
   height: 45px;
-  border-bottom: 1px solid rgb(172, 170, 170);
+  border-bottom: 0px solid rgb(172, 170, 170);
 }
 
 .topnav a {
@@ -50,7 +50,7 @@ body {
   color: #fff;
   border-radius: 5px;
   border: 1px solid teal;
-  padding: 10px 15px;
+  padding: 10px 10px;
   cursor: pointer;
 }
 .mystyle {
@@ -59,16 +59,14 @@ body {
 .NewsSearch {
   margin-top: 10px;
   margin-left: 20px;
- max-width: 60%;
-  
+  max-width: 60%;
 }
-#go{
-  background-color: rgb(171,189,202);
+#go {
+  background-color: rgb(171, 189, 202);
   margin-left: 3px;
   border: 0px;
   color: white;
   padding: 3px;
-
 }
 /* Side nave Bar */
 .sidenav {
@@ -139,22 +137,30 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
 }
-#prof{
+#prof {
   display: none;
   border: none;
   background-color: transparent;
-  
 }
-@media only screen and (max-width: 1000px) {
-  #prof{
+@media only screen and (max-width: 1100px) {
+  #prof {
     display: block;
   }
-  #log-in  {
+  #log-in {
     display: none;
-}
-#subsciption{
-  display: none;
-}
+  }
+  #subsciption {
+    display: none;
+  }
+  #navbar-table {
+    display: none;
+  }
+  #logo-img {
+    display: block;
+    margin: auto;
+    height: 30px;
+    cursor: pointer;
+  }
 }
 
 /* scroolbar css */
@@ -177,4 +183,99 @@ body {
 /* Handle on hover */
 .sidenav::-webkit-scrollbar-thumb:hover {
   background: #b30000;
+}
+
+/* HOME nAV BAR */
+
+.nav-table {
+  margin-top: 0px;
+  font-size: 12px;
+  color: rgb(92, 89, 89);
+  margin-bottom: 20px;
+}
+strong {
+  font-size: 13px;
+}
+.hide {
+  display: none;
+}
+#navbar-table {
+  margin-left: 22%;
+  padding-right: 10%;
+}
+
+#inner_navbar {
+  display: flex;
+}
+#navbar-Div {
+  width: 97%;
+  margin: auto;
+}
+#inner_navbar > div {
+  width: 33.33%;
+}
+#inner_navbar {
+  border-bottom: 1px solid rgb(219, 216, 216);
+}
+#weatherData > p {
+  text-align: right;
+  font-size: 13px;
+  line-height: 0;
+}
+#inner-logo-img {
+  margin: auto;
+  height: 50px;
+  cursor: pointer;
+}
+#latest-data {
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+}
+.today {
+  line-height: 0;
+  font-size: small;
+}
+#demo {
+  line-height: 0;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 13px;
+}
+#allnews_dataline {
+  display: flex;
+  width: 90%;
+  margin: auto;
+}
+#allnews_dataline > a > div {
+  padding-left: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: underline;
+}
+.underline {
+  height: 2px;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+}
+@media only screen and (max-width: 1100px) {
+  #inner_navbar > .weather_img,
+  #weatherData {
+    display: none;
+  }
+  .topnav {
+    border-bottom: 1px solid rgb(153, 149, 149);
+  }
+  #allnews_dataline {
+    display: none;
+  }
+  .underline {
+    display: none;
+  }
+  .today {
+    display: none;
+  }
 }

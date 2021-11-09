@@ -13,22 +13,22 @@ a:hover{
 }
 
 #border{
-    width: 90%;
+    width: 100%;
     height: 2px;
     background-color: #E2E2E2;
     margin: auto;
     margin-bottom: 1px;
 }
 #border-2{
-    width: 90%;
+    width: 100%;
     height: 1px;
     background-color: #E2E2E2;
     margin: auto;
 }
 
 #logo{
-    width: 90%;
-    padding: 10px 5%;
+    width: 100%;
+    padding: 10px 0;
 }
 
 #logo-img{
@@ -36,7 +36,7 @@ a:hover{
 }
 
 #footer-body{
-    width: 90%;
+    width: 100%;
     /* border: black 1px solid; */
     /* height: 460px; */
     display: flex;
@@ -150,7 +150,7 @@ a:hover{
 }
 
 #end-body a{
-    font-size: 11px;
+    font-size: 10px;
     margin: 8px;
     color: #666666;
 }

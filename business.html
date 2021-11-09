@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Business - The New York Times International</title>
+    <link rel="shortcut icon" href="https://scontent.fbbi1-1.fna.fbcdn.net/v/t1.6435-9/p960x960/249698033_3212967222323343_1963010322458135930_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=730e14&_nc_ohc=ZULsGLoqNcUAX_zWfd2&_nc_ht=scontent.fbbi1-1.fna&oh=700e5e800f686f3dee5f672f10d1dbff&oe=61A30AE4">
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="footer.css" />
+    <link href="navbar.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="business.css" type="text/css" />
+  </head>
+  <body>
+    <div id="navbar-Div"></div>
+    
+
+    <div id="worldNews-f-div">
+      <div class="heading">
+        <div class="business-flex">
+          
+          <h1>Business</h1>
+          <div class="business">
+            <a href="https://www.nytimes.com/international/section/technology"><h2>Tech</h2></a>
+            <a href="https://www.nytimes.com/international/section/business/economy"><h2>Econ</h2></a>
+            <a href="https://www.nytimes.com/international/section/business/media"><h2>Media</h2></a>
+            <a href="https://www.nytimes.com/international/section/your-money"><h2>Money</h2></a>
+            <a href="https://www.nytimes.com/international/section/business/dealbook"><h2>DealBook</h2></a>
+          </div>
+        </div>
+        <div class="table-div">
+          <table class="table">
+            <tr>
+              <td>MARKET SNAPSHOT 9:58 A.M.</td>
+              <td>S&P 500 <i class="fas fa-arrow-right"></i>4605.38 +0.19%</td>
+              <td>DOW INDUSTRIALS <i class="fas fa-arrow-right"></i> 35819.56 +0.25%</td>
+              <td>NASDAQ COMPOSITE <i class="fas fa-arrow-right"></i> 15498.39 +0.33%</td>
+              
+              <td class="border-right"><a href="https://www.nytimes.com/section/markets-overview" class="flot">Full Market Overview <i class="fas fa-angle-right"></i></a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <!-- heading News -->
+
+      <div id="news-hedline"></div>
+
+      <div id="title_poster"></div>
+      <div id="time-spenish"></div>
+      <div id="dispatches"></div>
+      <div id="saturday"></div>
+      <div id="latest">
+        <div>
+          <button id="latest-news">Latest</button>
+          <button id="Nsearch" onclick="Searchlatest()">
+            <i class="fas fa-search"></i> Search
+          </button>
+          <div id="inputSearch">
+            <button id="icon"><i class="fas fa-search"></i></button>
+            <input id="inputSerachR" placeholder="Search" />
+          </div>
+        </div>
+      </div>
+      <div id="option" class="hide" style="display: flex">
+        <p id="paragraph"><span id="resultlength"></span>results sorted by</p>
+        <p id="newpara" style="font-weight: bold"></p>
+
+        <button class="oldest" onclick="block()">relevance</button>
+      </div>
+      <div id="ltestNewsView"></div>
+      <div id="oldest" class="OldnewsDisplay none"></div>
+      <div id="serch_div"></div>
+      <div id="end-footer"></div>
+    </div>
+    
+  </body>
+  <script type="module" src="footerFunction.js"></script>
+  <script type="module" src="importNavbar.js"></script>
+  <script type="text/javascript" src="navbarfunction.js"></script>
+  <script type="text/javascript" src="business.js"></script>
+</html>

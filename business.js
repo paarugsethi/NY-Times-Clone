@@ -1,9 +1,9 @@
 const loadHome = async () => {
     try {
 
-        const res = await fetch(`https://api.nytimes.com/svc/topstories/v2/science.json?api-key=BJfrjqbfWdZvD9ALPlGGqTwjoKISrWmD`)
+        const res = await fetch(`https://api.nytimes.com/svc/search/v2/articlesearch.json?q=business&api-key=BI80rnnh0QqGJfTAmrjBIKiUQ3DLqadm`)
         const data = await res.json();
-        console.log("book", data);
+        console.log(data);
         prin_div(data);
     }
     catch (err) {
@@ -15,117 +15,132 @@ const loadHome = async () => {
 function prin_div(data) {
     const news_hedline = document.getElementById('news-hedline');
     //news_hedline.innerHTML ="";
+    console.log("result length"+data.response.docs.length)
     news_hedline.innerHTML = `<div class="news_inner_div" id="div1">
-    <a href="${data.results[1].url}"><img class="news-poster" src="${data.results[1].multimedia[0].url}" alt="${data.results[1].multimedia[0].caption}"></a>
-    <p class="Text_mute">${data.results[1].multimedia[0].copyright.toUpperCase()}<p>
-   <a href="${data.results[1].url}"> <h2 class="news_title">${data.results[1].title}</h2></a>
-    <p>${data.results[1].abstract}</p>
+    
+    <a href="${data.response.docs[1].web_url}"><img class="news-poster" src="https://www.nytimes.com/${data.response.docs[1].multimedia[2].url}"></a>
+    <p class="Text_mute">${data.response.docs[1].source.toUpperCase()}<p>
+   <a href="${data.response.docs[1].web_url}"> <h2 class="news_title">${data.response.docs[1].snippet}</h2></a>
+    <p>${data.response.docs[1].abstract}</p>
     </div>
+
     <div class="news_inner_small-div div2">
-    <a href="${data.results[20].url}"><img class="news-poster" src="${data.results[20].multimedia[0].url}" alt="${data.results[1].multimedia[0].caption}"></a>
-    <p class="Text_mute">${data.results[20].multimedia[0].copyright.toUpperCase()}<p>
-    <a href="${data.results[20].url}"><h2 class="news_title">${data.results[20].title}</h2></a>
-    <p>${data.results[20].abstract}</p>
+    <a href="${data.response.docs[4].web_url}"><img class="news-poster" src="https://www.nytimes.com/${data.response.docs[4].multimedia[2].url}" ></a>
+    <p class="Text_mute">${data.response.docs[4].source.toUpperCase()}<p>
+    <a href="${data.response.docs[4].web_url}"><h2 class="news_title">${data.response.docs[4].snippet}</h2></a>
+    <p>${data.response.docs[4].abstract}</p>
     </div>
+
+
     <div class="div3">
     <div class="story">
-    <a href="${data.results[4].url}"><h2 class="news_title">${data.results[4].title}</h2></a>
+    <a href="${data.response.docs[5].web_url}"><h2 class="news_title">${data.response.docs[5].snippet}</h2></a>
     <div>
-    <p class="abstract">${data.results[4].abstract}</p>
-    <a href="${data.results[4].url}"><img class="small-poster small" src="${data.results[4].multimedia[0].url}" alt="${data.results[1].multimedia[0].caption}"></a>
+    <p class="abstract">${data.response.docs[5].abstract}</p>
+    <a href="${data.response.docs[5].web_url}"><img class="small-poster small" src="https://www.nytimes.com/${data.response.docs[5].multimedia[2].url}" ></a>
     </div>
-    <p class="Text_mute">${data.results[4].multimedia[0].copyright.toUpperCase()}<p>
+    <p class="Text_mute">${data.response.docs[5].source.toUpperCase()}<p>
     
     </div>
     <hr>
     <div class="story display-non">
-    <a href="${data.results[11].url}://www.nytimes.com/2021/10/25/world/middleeast/israel-jews-palestinians-journey.html"><h2 class="news_title">${data.results[11].title}</h2></a>
+    <a href="${data.response.docs[7].web_url}"><h2 class="news_title">${data.response.docs[7].snippet}</h2></a>
     <div>
-    <p class="abstract">${data.results[11].abstract}</p>
-    <a href="${data.results[11].url}://www.nytimes.com/2021/10/25/world/middleeast/israel-jews-palestinians-journey.html"><img class="small-poster" src="${data.results[11].multimedia[1].url}" alt="${data.results[1].multimedia[0].caption}"></a>
+    <p class="abstract">${data.response.docs[7].abstract}</p>
+    <a href="${data.response.docs[7].web_url}"><img src="https://www.nytimes.com/${data.response.docs[7].multimedia[10].url}" /></a>
     </div>
-    <p class="Text_mute">${data.results[11].multimedia[0].copyright.toUpperCase()}<p>
+    <p class="Text_mute">${data.response.docs[7].source.toUpperCase()}<p>
     
     </div>
+
     </div>
     `
     const title_poster = document.getElementById('title_poster');
     //title_poster.innerHTML = "";
     title_poster.innerHTML = `
     <div class="titlePoster nopad" >
-    <a href="${data.results[3].url}">
-    <img src="${data.results[3].multimedia[0].url}" class="card-poster" alt="${data.results[1].multimedia[0].caption}" /></a>
-    <a href="${data.results[3].url}">
-    <h4>${data.results[3].title}</h4></a>
-    <p>${data.results[3].abstract}</p>
+    <a href="${data.response.docs[9].url}">
+    <img src="https://www.nytimes.com/${data.response.docs[9].multimedia[2].url}" class="card-poster" /></a>
+    <a href="${data.response.docs[9].url}">
+    <h4>${data.response.docs[9].snippet}</h4></a>
+    <p>${data.response.docs[9].abstract}</p>
     </div>
+
     <div class="titlePoster">
-    <a href="${data.results[8].url}">
-    <img src="${data.results[8].multimedia[0].url}" class="card-poster" alt="${data.results[1].multimedia[0].caption}" /></a>
-    <a href="${data.results[8].url}">
-    <h4>${data.results[8].title}</h4></a>
-    <p>${data.results[8].abstract}</p>
+    <a href="${data.response.docs[6].web_url}">
+    <img src="https://www.nytimes.com/${data.response.docs[6].multimedia[2].url}" class="card-poster"  /></a>
+    <a href="${data.response.docs[6].web_url}">
+    <h4>${data.response.docs[6].snippet}</h4></a>
+    <p>${data.response.docs[6].abstract}</p>
     </div>
+
     <div class="titlePoster">
-    <a href="${data.results[0].url}">
-    <img src="${data.results[0].multimedia[0].url}" class="card-poster" alt="${data.results[1].multimedia[0].caption}" /></a>
-    <a href="${data.results[0].url}">
-    <h4>${data.results[0].title}</h4></a>
-    <p>${data.results[0].abstract}</p>
+    <a href="${data.response.docs[0].web_url}">
+    <img src="https://www.nytimes.com/${data.response.docs[0].multimedia[2].url}" class="card-poster"  /></a>
+    <a href="${data.response.docs[0].web_url}">
+    <h4>${data.response.docs[0].snippet}</h4></a>
+    <p>${data.response.docs[0].abstract}</p>
     </div>
+
     <div class="titlePoster">
-    <a href="${data.results[2].url}">
-    <img src="${data.results[2].multimedia[0].url}" class="card-poster" alt="${data.results[1].multimedia[0].caption}" /></a>
-    <a href="${data.results[2].url}">
-    <h4>${data.results[2].title}</h4></a>
-    <p>${data.results[2].abstract}</p>
+    <a href="${data.response.docs[2].web_url}">
+    <img src="https://www.nytimes.com/${data.response.docs[2].multimedia[2].url}" class="card-poster"  /></a>
+    <a href="${data.response.docs[2].web_url}">
+    <h4>${data.response.docs[2].snippet}</h4></a>
+    <p>${data.response.docs[2].abstract}</p>
     </div>
+
     <div class="titlePoster bor">
-    <a href="${data.results[21].url}">
-    <img src="${data.results[21].multimedia[0].url}" class="card-poster" alt="${data.results[1].multimedia[0].caption}" /></a>
-    <a href="${data.results[21].url}">
-    <h4>${data.results[21].title}</h4></a>
-    <p>${data.results[21].abstract}</p>
+    <a href="${data.response.docs[7].web_url}">
+    <img src="https://www.nytimes.com/${data.response.docs[7].multimedia[2].url}" class="card-poster"  /></a>
+    <a href="${data.response.docs[7].web_url}">
+    <h4>${data.response.docs[7].snippet}</h4></a>
+    <p>${data.response.docs[7].abstract}</p>
     </div>
     `
     const timeSpenish = document.getElementById("time-spenish");
     timeSpenish.innerHTML = `
-    <button><a>More in Read The Times in Spanish <i class="fas fa-angle-right"></i></a></button>
-    <h3>Read The Times in Spanish</h3>
+    <button><a>More Good Reads From the Business Desk <i class="fas fa-angle-right"></i></a></button>
+    <h3>Good Reads From the Business Desk</h3>
     <div id="timespenish_div">
+
     <div class="timespenish_inner nopad">
-    <a href="http://"><img src="https://static01.nyt.com/images/2021/10/13/world/00somalia-1-esp-1/merlin_186381585_dc6c629d-6cba-436e-b569-b01007021dcb-videoLarge.jpg"/></a>
+    <a href="http://"><img src="https://www.nytimes.com/${data.response.docs[2].multimedia[2].url}"/></a>
       <div>
-      <a href="http://"><h4>Un combatiente de la CIA, un fabricante de bombas somalí y una década de lucha contra Al Shabab</h4></a>
-      <p>La búsqueda de un escurridizo militante somalí ilustra por qué el grupo islámico está en su punto más sólido en años, a pesar de que EE. UU. lleva diez años realizando operaciones de baja intensidad.</p>
+      <a href="http://"><h4>${data.response.docs[2].snippet}</h4></a>
+      <p>${data.response.docs[2].abstract}</p>
       </div>
         </div>
+
       <div class="timespenish_inner">
-      <a href="#"><img src="https://static01.nyt.com/images/2021/10/21/world/00HaitiClergy-esp-1/merlin_196570188_ccd904de-9348-4bdc-b038-f61f74555b55-videoLarge.jpg"/></a>
+      <a href="http://"><img src="https://www.nytimes.com/${data.response.docs[1].multimedia[2].url}"/></a>
       <div>
-      <a href="http://"> <h4>Se han violado todos los tabús’: las pandillas en Haití empezaron a secuestrar a religiosos</h4></a>
-      <p>Un sacerdote francés en Haití recuerda el secuestro que sufrió a manos de 400 Mawozo, la misma pandilla que ha privado de la libertad a 17 extranjeros, incluidos un bebé y un infante.</p>
+      <a href="http://"><h4>${data.response.docs[1].snippet}</h4></a>
+      <p>${data.response.docs[1].abstract}</p>
      </div>
         </div>
+
        <div class="timespenish_inner">
-       <a href="#"><img src="https://static01.nyt.com/images/2021/10/23/world/23japan-royalwomen1-esp-1/23japan-royalwomen1-videoLarge.jpg"/></a>
+       <a href="http://"><img src="https://www.nytimes.com/${data.response.docs[7].multimedia[2].url}"/></a>
       <div>
-      <a href="#"><h4>La vida de las princesas japonesas no es un cuento de hadas</h4></a>
-      <p>Una princesa que pronto se casará representa la tercera generación que sufre un intenso malestar emocional en un país que suele relegar a las mujeres a roles rígidos.</p>
+      <a href="http://"><h4>${data.response.docs[7].snippet}</h4></a>
+      <p>${data.response.docs[7].abstract}</p>
      </div>
         </div>
+
          <div class="timespenish_inner">
-         <a href="#"><img src="https://static01.nyt.com/images/2021/10/19/world/19Haiti01-esp-1/merlin_196415103_25616c1a-c8b4-4eab-a467-7462781fc34f-videoLarge.jpg"/></a>
+         <a href="http://"><img src="https://www.nytimes.com/${data.response.docs[8].multimedia[2].url}"/></a>
       <div>
-      <a href="#"><h4>Los secuestradores en Haití exigen 17 millones de dólares para liberar a los misioneros</h4></a>
-      <p>Los rehenes, casi todos estadounidenses relacionados con un grupo de ayuda cristiano, son las víctimas más recientes de una ola de criminalidad que ha crecido en el vacío político de la isla.</p>
+      <a href="http://"><h4>${data.response.docs[8].snippet}</h4></a>
+      <p>${data.response.docs[8].abstract}</p>
       </div>
         </div>
+
        <div class="timespenish_inner bor">
-       <a href="#"><img src="https://static01.nyt.com/images/2021/10/19/world/19brazil-ESP-00/merlin_195706455_54f0115a-b2db-429c-994a-abe74501cb08-videoLarge.jpg"/></a>
-       <div>
-       <a href="#"><h4>Jair Bolsonaro, acusado de crímenes contra la humanidad por el manejo de la pandemia</h4></a>
-       <p>Un esperado reporte del Senado de Brasil concluye que Jair Bolsonaro permitió a propósito que el coronavirus se propagara y matara a los brasileños en una apuesta fallida por la inmunidad de rebaño.</p>
+       <a href="http://"><img src="https://www.nytimes.com/${data.response.docs[9].multimedia[2].url}"/></a>
+      <div>
+      <a href="http://"><h4>${data.response.docs[9].snippet}</h4></a>
+      <p>${data.response.docs[9].abstract}</p>
       </div>
         </div>
       
@@ -134,9 +149,10 @@ function prin_div(data) {
 
     const dispatches = document.getElementById("dispatches");
     dispatches.innerHTML = `
-    <button><a>More in Dispatches <i class="fas fa-angle-right"></i></a></button>
-    <h3>Dispatches</h3>
+    <button><a href="http:/" >More in Currents <i class="fas fa-angle-right"></i></a></button>
+    <h3>Currents</h3>
     <div id="timespenish_div">
+
     <div class="timespenish_inner nopad">
     <a href="http://"><img src="https://static01.nyt.com/images/2021/10/22/world/00philippines-whalesharks-dispatch-2/00philippines-whalesharks-dispatch-2-videoLarge-v2.jpg"/></a>
       <div>
@@ -144,6 +160,7 @@ function prin_div(data) {
       <p>The chance to swim with the world’s biggest fish drew tourists to a Philippines town, but conservation groups denounce the hand-feeding that keeps the gentle creatures around.</p>
       </div>
         </div>
+
       <div class="timespenish_inner">
       <a href="#"><img src="https://static01.nyt.com/images/2021/10/19/world/19KILIS-TURKEY-DISPATCH01/merlin_193183176_8c488af0-f344-4d5e-b64e-72181615c049-videoLarge.jpg"/></a>
       <div>
@@ -151,6 +168,7 @@ function prin_div(data) {
       <p>As calls increase in Turkey for Syrian refugees to go home, Kilis, a border town transformed by the newcomers’ energy, has embraced the change.</p>
      </div>
         </div>
+
        <div class="timespenish_inner">
        <a href="#"><img src="https://static01.nyt.com/images/2021/10/15/world/00tunis-dispatch-4/merlin_195983085_934354a3-53c1-4f69-9a5c-4b63cb8ce015-videoLarge.jpg"/></a>
       <div>
@@ -158,6 +176,7 @@ function prin_div(data) {
       <p>When a monument to those killed in the 2011 uprising was recently damaged, few took notice or even cared in a town, and country, where there is now more regret than a wish to remember.</p>
      </div>
         </div>
+
          <div class="timespenish_inner">
          <a href="#"><img src="https://static01.nyt.com/images/2021/10/13/world/13mexico-murals-dispatch-top/13mexico-murals-dispatch-top-videoLarge.jpg"/></a>
       <div>
@@ -165,6 +184,7 @@ function prin_div(data) {
       <p>A new cableway and hundreds of giant murals have brightened lives in Iztapalapa, Mexico City’s most populous neighborhood, but poverty and attacks against women are still pervasive.</p>
       </div>
         </div>
+
        <div class="timespenish_inner bor">
        <a href="#"><img src="https://static01.nyt.com/images/2021/10/09/world/09Rwanda-Milk-Bar1/09Rwanda-Milk-Bar1-videoLarge-v2.jpg"/></a>
        <div>
@@ -182,6 +202,7 @@ function prin_div(data) {
     <button><a href="">More in The Saturday Profile <i class="fas fa-angle-right"></i></a></button>
     <h3>The Saturday Profile</h3>
     <div id="timespenish_div">
+
     <div class="timespenish_inner nopad">
     <a href="${data.results[16].url}"><img id="img-size" src="${data.results[16].multimedia[0].url}"/></a>
       <div>
@@ -189,13 +210,15 @@ function prin_div(data) {
       <p>${data.results[16].abstract}</p>
       </div>
         </div>
+
       <div class="timespenish_inner">
-      <a href="${data.results[23].url}"><img id="img-size" src="${data.results[23].multimedia[0].url}"/></a>
+      <a href="${data.results[19].url}"><img id="img-size" src="${data.results[19].multimedia[0].url}"/></a>
       <div>
-      <a href="${data.results[23].url}"> <h4>${data.results[23].title}</h4></a>
-      <p>${data.results[23].abstract}</p>
+      <a href="${data.results[19].url}"> <h4>${data.results[19].title}</h4></a>
+      <p>${data.results[19].abstract}</p>
      </div>
         </div>
+
        <div class="timespenish_inner">
        <a href="${data.results[12].url}"><img id="img-size" src="${data.results[12].multimedia[0].url}"/></a>
       <div>
@@ -203,26 +226,27 @@ function prin_div(data) {
       <p>${data.results[12].abstract}</p>
      </div>
         </div>
+
          <div class="timespenish_inner">
-         <a href="${data.results[29].url}"><img id="img-size" src="${data.results[29].multimedia[0].url}"/></a>
+         <a href="${data.results[9].url}"><img id="img-size" src="${data.results[9].multimedia[0].url}"/></a>
       <div>
-      <a href="${data.results[29].url}"><h4>${data.results[29].title}</h4></a>
-      <p>${data.results[29].abstract}</p>
+      <a href="${data.results[9].url}"><h4>${data.results[9].title}</h4></a>
+      <p>${data.results[9].abstract}</p>
       </div>
         </div>
+
        <div class="timespenish_inner bor">
-       <a href="${data.results[30].url}"><img id="img-size" src="${data.results[30].multimedia[0].url}"/></a>
+       <a href="${data.results[3].url}"><img id="img-size" src="${data.results[3].multimedia[0].url}"/></a>
        <div>
-       <a href="${data.results[30].url}"><h4>${data.results[30].title}</h4></a>
-       <p>${data.results[30].abstract}</p>
+       <a href="${data.results[3].url}"><h4>${data.results[3].title}</h4></a>
+       <p>${data.results[3].abstract}</p>
       </div>
         </div>
       
     </div>
     
     `
-    let resultlenth = document.getElementById("resultlength");
-resultlenth.textContent=`3652${data.results.length}`;
+   
 
 }
 
@@ -231,7 +255,7 @@ resultlenth.textContent=`3652${data.results.length}`;
 const loadHome2 = async () => {
   try {
 
-      const res = await fetch(`https://api.nytimes.com/svc/topstories/v2/science.json?api-key=BJfrjqbfWdZvD9ALPlGGqTwjoKISrWmD`)
+      const res = await fetch(`https://api.nytimes.com/svc/search/v2/articlesearch.json?q=business&api-key=BI80rnnh0QqGJfTAmrjBIKiUQ3DLqadm`)
       const data = await res.json();
       console.log(data);
       showData(data);
@@ -245,18 +269,19 @@ const loadHome2 = async () => {
 function showData(data){
     const result = document.getElementById("ltestNewsView");
     result.innerHTML = "";
-        result.innerHTML = data.results.map((news)=>{
+        result.innerHTML = data.response.docs.map((latest)=>{
             return `
             <div class="latest-item">
             <div>
-            <a href="${news.url}">
-            <h3>${news.title}</h3>
-            <p class="latest_para">${news.abstract}</p>
+            <a href="${latest.web_url}">
+            <h3>${latest.snippet}</h3></a>
+            <p class="latest_para">${latest.abstract}</p>
            </div>
            <div>
-           <img src="${news.multimedia[3].url}"/>
+           <img src="https://www.nytimes.com/${latest.multimedia[0].url}"/>
            </div>
-           </a>
+           
+           
             </div>`
         })
 
@@ -308,10 +333,13 @@ function OldestnewsView(data){
       oldest.innerHTML = data.results.map((old)=>{
           return `
           <div class="oldNewsDiv">
+          
           <p clss="OldnewsStatus" style="font-size: 12px">${old.byline.toUpperCase()}</p>
           <h3>${old.title.toUpperCase()}</h3>
           <p>${old.abstract}${old.adx_keywords}</p>
           <p style="color: rgb(175, 172, 172); font-size: 12px">${old.byline.toUpperCase()}</p>
+          
+          
           </div>
          `
       })
@@ -326,8 +354,8 @@ function block(){
  const oldest = document.getElementById("oldest");
   oldest.className = "block"
   const searchDiv = document.getElementById("search_div");
-  searchDiv.innerHTML = "";
-  Search_div.className = "none"
+  
+  searchDiv.className = "none"
 }
 
 function alwaysView(){
@@ -446,3 +474,5 @@ function Debouncer(func, delay){
 
 const updateDebounce = Debouncer(searchNews, 500)
 //updateDebounce()
+
+

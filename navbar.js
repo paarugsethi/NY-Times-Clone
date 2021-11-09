@@ -13,14 +13,14 @@ function Navbar(){
         </button>
 
         <div class="dropdown-container">
-          <a href="#">Africa</a>
-          <a href="#">Australia</a>
-          <a href="#">America</a>
-          <a href="#">Asia Pacific</a>
-          <a href="#">Canada</a>
+          <a href="WorldNews.html">Africa</a>
+          <a href="WorldNews.html">Australia</a>
+          <a href="WorldNews.html">America</a>
+          <a href="WorldNews.html">Asia Pacific</a>
+          <a href="WorldNews.html">Canada</a>
         </div>
         <button class="dropdown-btn" onmouseover="outDropdown()">
-          Business
+          <a href="business.html">Business</a>
           <i class="fa fa-caret-down"></i>
         </button>
 
@@ -41,7 +41,7 @@ function Navbar(){
           <a href="#">Congress</a>
         </div>
         <button class="dropdown-btn" onmouseover="outDropdown()">
-          U.S. News
+          <a href="usNews.html">U.S. News</a>
           <i class="fa fa-caret-down"></i>
         </button>
 
@@ -132,7 +132,7 @@ function Navbar(){
           alt="News-logo"
           class="logo"
         />
-        <button id="subsciption">Sbscription Weak</button>
+        <button id="subsciption"></a href="https://www.nytimes.com/subscription?campaignId=9YU8R"> Subscribe for ₹150/year</a></button>
         <button id="log-in" onclick="LoGIn()">Log In</button>
         <button id="prof"><i class="fas fa-user-edit"></i></button>
       </div>

@@ -42,12 +42,12 @@ function prin_div(data) {
     </div>
     <hr>
     <div class="story display-non">
-    <a href="${data.results[31].url}://www.nytimes.com/2021/10/25/world/middleeast/israel-jews-palestinians-journey.html"><h2 class="news_title">${data.results[11].title}</h2></a>
+    <a href="${data.results[28].url}://www.nytimes.com/2021/10/25/world/middleeast/israel-jews-palestinians-journey.html"><h2 class="news_title">${data.results[28].title}</h2></a>
     <div>
-    <p class="abstract">${data.results[11].abstract}</p>
-    <a href="${data.results[31].url}://www.nytimes.com/2021/10/25/world/middleeast/israel-jews-palestinians-journey.html"><img class="small-poster" src="${data.results[11].multimedia[1].url}" alt="${data.results[1].multimedia[0].caption}"></a>
+    <p class="abstract">${data.results[28].abstract}</p>
+    <a href="${data.results[28].url}://www.nytimes.com/2021/10/25/world/middleeast/israel-jews-palestinians-journey.html"><img class="small-poster" src="${data.results[28].multimedia[1].url}" alt="${data.results[1].multimedia[0].caption}"></a>
     </div>
-    <p class="Text_mute">${data.results[11].multimedia[0].copyright.toUpperCase()}<p>
+    <p class="Text_mute">${data.results[28].multimedia[0].copyright.toUpperCase()}<p>
     
     </div>
 
@@ -89,11 +89,11 @@ function prin_div(data) {
     </div>
 
     <div class="titlePoster bor">
-    <a href="${data.results[31].url}">
-    <img src="${data.results[31].multimedia[0].url}" class="card-poster" alt="${data.results[1].multimedia[0].caption}" /></a>
-    <a href="${data.results[31].url}">
-    <h4>${data.results[31].title}</h4></a>
-    <p>${data.results[31].abstract}</p>
+    <a href="${data.results[6].url}">
+    <img src="${data.results[6].multimedia[0].url}" class="card-poster" alt="${data.results[1].multimedia[0].caption}" /></a>
+    <a href="${data.results[6].url}">
+    <h4>${data.results[6].title}</h4></a>
+    <p>${data.results[6].abstract}</p>
     </div>
     `
     const timeSpenish = document.getElementById("time-spenish");
@@ -226,18 +226,18 @@ function prin_div(data) {
         </div>
 
          <div class="timespenish_inner">
-         <a href="${data.results[29].url}"><img id="img-size" src="${data.results[29].multimedia[0].url}"/></a>
+         <a href="${data.results[27].url}"><img id="img-size" src="${data.results[27].multimedia[0].url}"/></a>
       <div>
-      <a href="${data.results[29].url}"><h4>${data.results[29].title}</h4></a>
-      <p>${data.results[29].abstract}</p>
+      <a href="${data.results[27].url}"><h4>${data.results[27].title}</h4></a>
+      <p>${data.results[27].abstract}</p>
       </div>
         </div>
 
        <div class="timespenish_inner bor">
-       <a href="${data.results[30].url}"><img id="img-size" src="${data.results[30].multimedia[0].url}"/></a>
+       <a href="${data.results[7].url}"><img id="img-size" src="${data.results[7].multimedia[0].url}"/></a>
        <div>
-       <a href="${data.results[30].url}"><h4>${data.results[30].title}</h4></a>
-       <p>${data.results[30].abstract}</p>
+       <a href="${data.results[7].url}"><h4>${data.results[7].title}</h4></a>
+       <p>${data.results[7].abstract}</p>
       </div>
         </div>
       
@@ -254,7 +254,7 @@ resultlenth.textContent=`3652${data.results.length}`;
 const loadHome2 = async () => {
   try {
 
-      const res = await fetch(`https://api.nytimes.com/svc/topstories/v2/world.json?api-key=BJfrjqbfWdZvD9ALPlGGqTwjoKISrWmD`)
+      const res = await fetch(`https://api.nytimes.com/svc/topstories/v2/us.json?api-key=BJfrjqbfWdZvD9ALPlGGqTwjoKISrWmD`)
       const data = await res.json();
       console.log(data);
       showData(data);
